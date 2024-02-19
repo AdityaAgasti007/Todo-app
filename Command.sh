@@ -13,9 +13,5 @@ python3 manage.py runserver 0.0.0.0:8001
 nohup python3 manage.py runserver 0.0.0.0:8001 &
 lsof -i:8001
 kill -9 pid 
-sudo apt install docker.io
-vi Dockerfile 
-docker build . -t todo-app
-docker  run -d -p 8001:8001 <container-id>
-docker ps 
+
 
