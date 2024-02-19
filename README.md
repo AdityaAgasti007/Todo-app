@@ -21,8 +21,28 @@ $ virtualenv -p python3.10 env
 ```bash
 $ .\env\Scripts\Activate
 ```
-6]  Enter into Project directory 
+6]  Install the django application into your local terminal 
 ```bash
-$ cd django
+$ pip install django 
 ```
-7]
+7] Update the pip 
+```bash
+$  python.exe -m pip install --upgrade pip
+```
+8] This will create all the migrations file (database migrations) required to run this App
+```bash
+$ python manage.py makemigration
+```
+9] Now, Apply the migration run following command
+```bash
+ $ python manage.py migrate
+```
+10] One last step and then our todo App will be live. We need to create an admin user to run this App. On the terminal, type the following command and provide username, password and email for the admin user
+```bash
+$ python manage.py createsuperuser
+```
+11] That was pretty simple, right? Now let's make the App live. We just need to start the server now and then we can start using our simple todo App. Start the server by following command
+```bash
+$ python manage.py runserver
+```
+12] Once the server is hosted, head over to http://127.0.0.1:8000/todos for the App.
