@@ -1,5 +1,5 @@
 # Todo-app
-Containerized Python-Django application And deployed it using docker
+## Containerized Python-Django application And deployed it using docker
 # Step 1 
 1] Clone The repository into your local terminal 
 ```bash
